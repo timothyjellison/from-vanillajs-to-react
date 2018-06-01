@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>React Test</title>
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      class Hello extends React.Component {
+        render() {
+          return <p>Hello World!</p>;
+        }
+      }
+
+      ReactDOM.render(
+        <Hello />,
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
