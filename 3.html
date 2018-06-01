@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>React Test</title>
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      class Hello extends React.Component {
+        render() {
+          return React.createElement('p', null, `Hello World!`);
+        }
+      }
+
+      ReactDOM.render(
+        React.createElement(Hello),
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
